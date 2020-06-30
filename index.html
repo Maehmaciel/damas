@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damas</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    main {
+        width: 100vh;
+        height: 100vh;
+        padding: 10px;
+        display: flex;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .linha {
+        flex: 1;
+        display: flex;
+    }
+
+    .black {
+        background-color: black;
+
+    }
+
+    .white {
+        background-color: white;
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    .blue {
+        background-color: blue;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+    }
+
+
+    .item {
+        text-align: center;
+        font-size: 1.5em;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bolinha {
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        box-shadow: 10px 10px 36px -5px rgba(0, 0, 0, 0.75);
+    }
+</style>
+
+<body>
+    <section class="grid grid-template-rows-1">
+        <div class="item black">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha red"></div>
+        </div>
+
+
+        <div class="item white">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha red"></div>
+        </div>
+
+        <div class="item black">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha red"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha red"></div>
+        </div>
+
+
+        <div class="item white"></div>
+        <div class="item black"></div>
+        <div class="item white"></div>
+        <div class="item black"></div>
+        <div class="item white"></div>
+        <div class="item black"></div>
+        <div class="item white"></div>
+        <div class="item black"></div>
+
+        <div class="item black"></div>
+        <div class="item white"></div>
+        <div class="item black"></div>
+        <div class="item white"></div>
+        <div class="item black"></div>
+        <div class="item white"></div>
+        <div class="item black"></div>
+        <div class="item white"></div>
+
+
+        <div class="item white">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha blue"></div>
+        </div>
+
+
+
+        <div class="item black">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha blue"></div>
+        </div>
+
+
+        <div class="item white">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item white">
+            <div class="bolinha blue"></div>
+        </div>
+        <div class="item black">
+            <div class="bolinha blue"></div>
+        </div>
+
+
+    </section>
+</body>
+
+</html>
