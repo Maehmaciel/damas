@@ -1,0 +1,26 @@
+{
+  "name": "damas",
+  "version": "1.0.0",
+  "description": "Web chat utilizando nodejs.",
+  "repository": "https://github.com/Maehmaciel/damas.git",
+  "author": "Maria Maciel <mariaeugeniamaciel@gmail.com>",
+  "license": "MIT",
+  "main": "servidor.js",
+  "dependencies": {
+    "express": "4.16.4",
+    "socket.io": "2.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "comment": "O comando start é usado para padronizar a inicialização da aplicação",
+    "start": "node servidor.js"
+  },
+  "keywords": [
+    "client/server",
+    "chat",
+    "nodejs",
+    "javascript",
+    "websockets",
+    "socket.io"
+  ]
+}

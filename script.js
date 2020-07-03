@@ -189,7 +189,38 @@ function drop(ev) {
       divRemove.removeChild(divRemove.lastChild);
     }
   }
+  socket.emit('chat msg',{bolinha:bolinha.id,lugar:novo.id, remove})
 
+
+}
+
+
+function drop2(bolinha, novo, remove) {
+  let time = bolinha.className.split(' ')[1]
+  bolinha.style.opacity = 1
+  let antigo = bolinha.parentNode
+  let proximas = []
+
+  if (novo.parentNode === antigo)
+    return
+
+  if (novo.className.includes('bolinha') || (!(novo.childNodes.length === 0))) {
+    antigo.appendChild(bolinha)
+    return
+  }
+
+
+
+
+  novo.appendChild(bolinha);
+  while (antigo.firstChild) {
+    antigo.removeChild(antigo.lastChild);
+  }
+  if (!!remove) {
+    while (remove.firstChild) {
+      remove.removeChild(remove.lastChild);
+    }
+  }
 
 
 }
