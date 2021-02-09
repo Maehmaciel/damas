@@ -7,6 +7,7 @@ function allowDrop(ev) {
 function drag(ev) {
   ev.dataTransfer.setData("text", ev.target.id);
   ev.target.style.opacity = 0.1
+  socket.emit('status', nickname + ' está jogando');
 }
 
 function validaPosicao(posicao) {
@@ -162,33 +163,3 @@ function drop(ev) {
 
 }
 
-
-function drop2(bolinha, novo, remove) {
-  let time = bolinha.className.split(' ')[1]
-  bolinha.style.opacity = 1
-  let antigo = bolinha.parentNode
-  let proximas = []
-
-  if (novo.parentNode === antigo)
-    return
-
-  if (novo.className.includes('bolinha') || (!(novo.childNodes.length === 0))) {
-    antigo.appendChild(bolinha)
-    return
-  }
-
-
-
-
-  novo.appendChild(bolinha);
-  while (antigo.firstChild) {
-    antigo.removeChild(antigo.lastChild);
-  }
-  if (!!remove) {
-    while (remove.firstChild) {
-      remove.removeChild(remove.lastChild);
-    }
-  }
-
-
-}

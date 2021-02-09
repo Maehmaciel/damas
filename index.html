@@ -115,18 +115,16 @@
                 console.log(msg);
             });
 
-            // $('#msg').keypress(function(evt) {
-            //     if (nickname === '') {
-            //         return;
-            //     }
-
-            //     socket.emit('status', nickname + ' está escrevendo...');
-            // });
 
 
-            // $('#msg').keyup(function(evt) {
-            //     socket.emit('status', '');
-            // });
+            function myFunction2(evt) {
+                if (nickname === '') {
+                    return;
+                }
+
+                socket.emit('status', 'aa');
+            }
+
         })
 
         function navegarAjax() {
